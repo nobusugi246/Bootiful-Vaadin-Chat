@@ -1,0 +1,36 @@
+= Bootiful Vaadin Chat
+:example-caption: List
+
+A Chat application with Spring Boot Ver.1.3.1 and Vaadin 7.5.10.
+
+
+== How to run / 実行方法
+
+Download `vaadinchat-0.1.0.jar` from `releases`, then
+
+.How to run this application
+====
+----
+$ java -jar vaadinchat-0.1.0.jar
+----
+====
+
+And access http://localhost:8080 from your Browser.
+
+
+== License / ライセンス
+
+Apache License Version 2.0
+
+
+== Acknowledgements / 謝辞
+
+This application is deeply inspired by the tutorial below.
+
+https://spring.io/guides/gs/crud-with-vaadin/
+
+
+== ChangLog / 変更履歴
+
+* Ver.0.1.0, Initial release : 2015-12-20
+
