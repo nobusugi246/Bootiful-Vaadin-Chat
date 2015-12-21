@@ -115,7 +115,7 @@ public class VaadinFrontend extends UI implements Broadcaster.BroadcastListener 
         leftLayout.addComponent(chatMessage);
 
         table.setIcon(FontAwesome.USERS);
-        table.setHeight("200px");
+        table.setHeight("300px");
         table.setWidth(100.0f, Unit.PERCENTAGE);
         table.addContainerProperty("User",  String.class, null);
         leftLayout.addComponent(table);
