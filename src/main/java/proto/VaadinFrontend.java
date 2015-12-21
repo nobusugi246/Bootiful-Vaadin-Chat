@@ -7,6 +7,7 @@ import com.vaadin.data.Item;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.server.UserError;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.server.VaadinSession;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,8 @@ public class VaadinFrontend extends UI implements Broadcaster.BroadcastListener 
 
     @Override
     protected void init(VaadinRequest request) {
+        VaadinSession.getCurrent().getSession().setMaxInactiveInterval(-1);
+
         HorizontalLayout rootLayout = new HorizontalLayout();
         setContent(rootLayout);
         rootLayout.setSizeFull();
