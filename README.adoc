@@ -37,7 +37,7 @@ Apache License Version 2.0
 * This application is deeply inspired by the tutorial below.
 **  https://spring.io/guides/gs/crud-with-vaadin/
 
-* Special Thanks to Mr. MAENO Daiduke, as a Reviewer of UX.
+* Special Thanks to Mr. MAENO Daisuke, as a Reviewer of UX.
 
 
 == ChangLog / 変更履歴
