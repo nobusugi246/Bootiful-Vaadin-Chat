@@ -16,7 +16,7 @@ apply plugin: 'io.spring.dependency-management'
 
 jar {
   baseName = 'vaadinchat'
-  version = '0.1.1'
+  version = '0.1.2'
 }
 
 sourceCompatibility = 1.8
@@ -45,6 +45,6 @@ dependencyManagement {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '2.9'
+  gradleVersion = '2.10'
 }
 
