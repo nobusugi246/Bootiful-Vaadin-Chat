@@ -4,10 +4,8 @@ import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.data.Item;
-import com.vaadin.server.FontAwesome;
-import com.vaadin.server.UserError;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinSession;
+import com.vaadin.server.*;
+import com.vaadin.shared.Position;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.ui.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -217,8 +215,10 @@ public class VaadinFrontend extends UI implements Broadcaster.BroadcastListener 
                     if (msg.getSendto().equals("1")) {
                         target = "Chat Area 2";
                     }
-                    Notification.show(msg.getUsername() + " / " + target,
-                            msg.getText(), Notification.Type.HUMANIZED_MESSAGE);
+                    Notification notif = new Notification(msg.getUsername() + " / " + target,
+                                                          msg.getText(), Notification.Type.HUMANIZED_MESSAGE);
+                    notif.setPosition(Position.MIDDLE_RIGHT);
+                    notif.show(Page.getCurrent());
                     break;
                 }
                 case "fix": {
