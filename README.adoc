@@ -4,6 +4,13 @@
 A Chat application with Spring Boot Ver.1.3.1 and Vaadin Ver.7.5.10.
 
 
+== ScreenShot
+
+.ScreenShot of this Chat Application
+image::https://raw.githubusercontent.com/nobusugi246/Bootiful-Vaadin-Chat/479b30206f1c352d4e694abe4d9f853aaa15b980/readme_images/screenshot000.png
+
+
+
 == How to run / 実行方法
 
 Download `vaadinchat-0.1.2.jar` from `releases`, then
