@@ -12,6 +12,8 @@ image::https://raw.githubusercontent.com/nobusugi246/Bootiful-Vaadin-Chat/479b30
 * Select a day on Calendar to display chat log if exists.
 * Select chat area to send message.
 
+This Chat App. displays temporal input message with Vaadin Notification.
+
 
 == How to run / 実行方法
 
