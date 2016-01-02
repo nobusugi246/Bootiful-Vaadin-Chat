@@ -17,7 +17,8 @@ This Chat App. displays temporal input message with Vaadin Notification.
 
 == How to run / 実行方法
 
-Download `vaadinchat-0.1.2.jar` from `releases`, then
+Download `vaadinchat-0.1.2.jar` from https://github.com/nobusugi246/Bootiful-Vaadin-Chat/releases[`releases`],
+then
 
 .How to run this application
 ====
@@ -53,7 +54,7 @@ Apache License Version 2.0
 
 == ChangLog / 変更履歴
 
-* Ver.0.1.2, Set the current input display position MIDDLE_RIGHT : 2015-12-23
+* Ver.0.1.2, Set the temporal input message position MIDDLE_RIGHT : 2015-12-23
 
 * Ver.0.1.1, Set the session never timeout : 2015-12-22
 
