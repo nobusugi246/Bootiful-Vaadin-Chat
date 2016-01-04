@@ -10,6 +10,7 @@ class HookRequest {
   def commits
   def comment
   def issue
+  def pullRequest
   def repository
 }
 

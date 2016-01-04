@@ -30,16 +30,16 @@ class DefaultController {
                                comment: content.comment,
                                ref: content.ref,
                                issue: content.issue,
+                               pullRequest: content.pull_request,
                                commits: content.commits,
                                repository: content.repository)
 
     def msg = new Message('fix')
     msg.setUsername(hook.sender.login)
-    if(content.comment != null && content.issue != null) { // Issue commented on.
+    if(content.comment != null && content.issue != null) { // Issue/Pull Request commented on.
       msg.setText("${hook.ref} - ${hook.repository.name}")
     } else if(content.issue != null && content.number != null) { // Issue opened, closed.
-    } else if(content.issue != null && content.number != null) { // Pull Request opened, closed, or synchronized.
-    } else if(content.issue != null && content.number != null) { // Pull Request diff commented on.
+    } else if(content.pull_request != null) { // Pull Request opened, closed, or synchronized.
     } else if(content.issue != null && content.number != null) { // Git push to a repository. 
     }
     
