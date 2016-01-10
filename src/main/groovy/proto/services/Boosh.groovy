@@ -8,14 +8,15 @@ import org.crsh.shell.ShellFactory
 
 @Slf4j
 class Boosh {
-  @Autowired
-  final PluginLifeCycle crshBootstrapBean
-  Shell shell
+    @Autowired
+    final PluginLifeCycle crshBootstrapBean
+
+    Shell shell
   
-  def execute(String[] args) {
-    log.info "args: ${args}"
-    return args.size()
-  }
+    def execute(String[] args) {
+        log.info "args: ${args}"
+        return args.size()
+    }
 
 }
 
