@@ -15,7 +15,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'io.spring.dependency-management' 
 
 ext {
-  vaadinVersion = '7.6.0'
+  vaadinVersion = '7.6.3'
 }
 
 jar {
@@ -49,6 +49,6 @@ dependencyManagement {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = '2.10'
+  gradleVersion = '2.11'
 }
 
