@@ -1,7 +1,7 @@
 = Bootiful Vaadin Chat
 :example-caption: List
 
-A Chat application with Spring Boot Ver.1.3.3 and Vaadin Ver.7.6.3.
+A Chat application with Spring Boot Ver.1.3.3 and Vaadin Ver.7.6.3 and Groovy Ver.2.4.
 
 
 == ScreenShot
@@ -55,7 +55,7 @@ Apache License Version 2.0
 
 == ChangLog / 変更履歴
 
-* Ver.0.1.4, Update Spring Boot to 1.3.3, Vaadin to 7.6.0, and Convert into groovy : 2016-02-29
+* Ver.0.1.4, Update Spring Boot to 1.3.3, Vaadin to 7.6.3, and Convert into groovy : 2016-02-29
 
 * Ver.0.1.3, Update Vaadin to 7.6.0 : 2016-01-10
 
