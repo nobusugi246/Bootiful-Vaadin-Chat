@@ -3,14 +3,14 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.3.2.RELEASE'
+    classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE'
     classpath 'io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE'
   }
 }
 
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'spring-boot' 
 apply plugin: 'io.spring.dependency-management' 
 
@@ -31,14 +31,15 @@ repositories {
 }
 
 dependencies {
+  compile localGroovy()
   compile 'org.springframework.boot:spring-boot-starter-web'
   compile 'org.springframework.boot:spring-boot-starter-actuator'
   compile 'org.springframework.boot:spring-boot-starter-data-jpa'
   compile 'org.springframework.boot:spring-boot-devtools'
-  compile 'org.projectlombok:lombok:1.16.6'
   compile 'com.h2database:h2'
   compile 'com.vaadin:vaadin-spring-boot-starter:1.0.0'
   compile "com.vaadin:vaadin-push:${vaadinVersion}"
+
   testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
